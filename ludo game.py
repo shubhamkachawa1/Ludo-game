@@ -20,9 +20,9 @@ sift_y=(screen_height-bord_height)/2.4
 gamewindow=pygame.display.set_mode((screen_width,screen_height))
 
 
-location_green= pygame.image.load("/storage/emulated/0/Python/Ludo game/green.png")
+location_green= pygame.image.load("green.png")
 
-location_red= pygame.image.load("/storage/emulated/0/Python/Ludo game/red.png")
+location_red= pygame.image.load("red.png")
 
 
 pygame.mixer.init()
@@ -1274,7 +1274,7 @@ def dice():
      global fack_dice_number
      
      
-     play_button= pygame.image.load("/storage/emulated/0/Python/Ludo game/play.png")
+     play_button= pygame.image.load("play.png")
      
      play_button = pygame.transform.scale(play_button, (180, 180))
      red_dice_rect=play_button.get_rect()
@@ -1352,13 +1352,13 @@ def dice():
              global dice_number
              
              if (dice_number==0):
-                 pygame.mixer.music.load("/storage/emulated/0/Python/Ludo game/Dice_sound.mp3")
+                 pygame.mixer.music.load("Dice_sound.mp3")
                  pygame.mixer.music.play()
                  #time.sleep(0.5)
                  dice_number=random.randint(1,6)
                  
          else:
-              pygame.mixer.music.load("/storage/emulated/0/Python/Ludo game/Dice_sound.mp3")
+              pygame.mixer.music.load("Dice_sound.mp3")
               pygame.mixer.music.play()
               #time.sleep(0.5)
               dice_number=fack_dice_number
@@ -1366,7 +1366,7 @@ def dice():
               
          
              
-         dice= pygame.image.load(f"/storage/emulated/0/Python/Ludo game/{dice_number}.png")
+         dice= pygame.image.load(f"{dice_number}.png")
          dice = pygame.transform.scale(dice, (180, 180)) 
          gamewindow.blit(dice,(x, y))
          
@@ -2262,7 +2262,7 @@ def goti_run(name,stape):
     while(stape!=0):
         ludo_bord()
         dice()
-        pygame.mixer.music.load("/storage/emulated/0/Python/Ludo game/Goti_run_sound.mp3")
+        pygame.mixer.music.load("Goti_run_sound.mp3")
         pygame.mixer.music.play()
         
         if(name!="red_a"):
