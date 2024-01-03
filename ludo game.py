@@ -178,7 +178,7 @@ def display_winner_name(text,colour,x,y):
     gamewindow.blit(screen_text,[x,y])
     pygame.display.update()
     
-    pygame.mixer.music.load("/storage/emulated/0/Python/Ludo game/Winner_sound.mp3")
+    pygame.mixer.music.load("Winner_sound.mp3")
     pygame.mixer.music.play()
     time.sleep(3)
     return 0
